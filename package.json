@@ -1,0 +1,19 @@
+{
+  "name": "cse341_project",
+  "version": "1.0.0",
+  "description": "My Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preston-bateman/cse341_project.git"
+  },
+  "author": "Preston Bateman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/preston-bateman/cse341_project/issues"
+  },
+  "homepage": "https://github.com/preston-bateman/cse341_project#readme"
+}
