@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/preston-bateman/cse341_project/issues"
   },
-  "homepage": "https://github.com/preston-bateman/cse341_project#readme"
+  "homepage": "https://github.com/preston-bateman/cse341_project#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
 }
