@@ -1,0 +1,4 @@
+GET https://cse341-project-qch9.onrender.com
+
+//test contacts
+GET https://cse341-project-qch9.onrender.com/contacts
