@@ -65,7 +65,7 @@ const deleteContact = async (req, res) => {
         res.status(400).json(response.error || 'You must enter a valid id')
     }
 
-    const response = await mongodb.getDatabase().db().collection('contacts').deleteOne({ _id: contactId }, contact)
+    const response = await mongodb.getDatabase().db().collection('contacts').deleteOne({ _id: contactId }, true)
     if (response.deletedCount > 0) {
         res.status(204).send()
     }else {
