@@ -1,3 +1,37 @@
+//LOCALHOST
+### Get all contacts
+
+GET http://localhost:3000/contacts
+
+###Get contact by id
+GET http://localhost:3000/contacts/65efacaef81da2ff7ed66e4a
+
+###Create Contact
+POST http://localhost:3000/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Ben",
+    "lastName": "Midgley",
+    "email": "ben@iamrad.com",
+    "favoriteColor": "blue",
+    "birthday": "September 13 1988"
+}
+
+###PUT Contact
+PUT http://localhost:3000/contacts/65efacaef81da2ff7ed66e4a HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Bruce",
+    "lastName": "Wayne",
+    "email": "iambatman@batman.com",
+    "favoriteColor": "black",
+    "birthday": "March 7 1969"
+
+}
+
+
 GET https://cse341-project-qch9.onrender.com
 
 //test contacts
