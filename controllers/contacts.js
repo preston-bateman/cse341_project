@@ -2,6 +2,7 @@ const mongodb = require('../data/database')
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
+    //#swagger.tags=['Contacts']
     const result = await mongodb.getDatabase().db().collection('contacts').find()
     result.toArray().then((contacts) => {
         res.setHeader('Content-Type', 'application/json')
@@ -10,6 +11,7 @@ const getAll = async (req, res) => {
 }
 
 const getSingle = async (req, res) => {
+    //#swagger.tags=['Contacts']
     const contactId = new ObjectId(req.params.id)
     const result = await mongodb.getDatabase().db().collection('contacts').find({ _id: contactId })
     result.toArray().then((contacts) => {
@@ -19,6 +21,7 @@ const getSingle = async (req, res) => {
 }
 
 const createContact = async (req, res) => {
+    //#swagger.tags=['Contacts']
     const contact = {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
@@ -35,6 +38,7 @@ const createContact = async (req, res) => {
 }
 
 const updateContact = async (req, res) => {
+    //#swagger.tags=['Contacts']
     if(!ObjectId.isValid(req.params.id)) {
         res.status(400).json(response.error || 'You must enter a valid id')
     }
@@ -56,6 +60,7 @@ const updateContact = async (req, res) => {
 }
 
 const deleteContact = async (req, res) => {
+    //#swagger.tags=['Contacts']
     if(!ObjectId.isValid(req.params.id)) {
         res.status(400).json(response.error || 'You must enter a valid id')
     }
